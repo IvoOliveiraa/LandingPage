@@ -1,0 +1,1151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --cor-bg:#fff;
+    --cor-fundo:#dddddd;
+    --cor-botao-icones:rgb(0, 0, 0);
+    --cor-botao-hover:rgb(58, 58, 58);
+    --cor-botao-nba: #066ab2;
+    --cor-botao-nba-2: #e61a4d;
+    --cor-botao-nba-hover: #0a3665;
+
+}
+
+html{
+    font-family: 'poppins', sans-serif;
+}
+
+/* Começo - Header*/
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--cor-botao-icones);
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    transition: 1s linear;
+    justify-content: space-between;
+    margin: auto;
+}
+
+header .hbg{
+    color: var(--cor-bg);
+    font-size: 22px;
+    display: none;
+}
+
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+}
+
+header .logo img{
+    width: 50px;
+    height: 50%;
+    margin-left: 25px; 
+}
+
+header .menu a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--cor-fundo);
+    font-weight: 500;    
+}
+
+header .menu a:hover{
+    color: var(--cor-botao-nba);
+}
+
+header .carrinho{
+    margin-right: 30px;
+}
+
+
+header .carrinho i{
+    font-size: 20px;
+    padding: 7px;
+    cursor: pointer;
+    color: var(--cor-fundo);
+}
+
+header .carrinho i:hover{
+    color: var(--cor-botao-nba);
+}
+/* Fim - Header*/
+
+
+
+/* Começo - Conteudo principal*/
+
+.pricipal{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+    background-image: linear-gradient(135deg, #066ab2, #dddddd, #066ab2,#dddddd);
+}
+
+
+.pricipal .home{
+    margin-top: 5%;
+}
+
+
+.pricipal .home p{
+    margin: auto;
+    text-align: center;
+    width: 40%;
+    font-size: 16px;
+    transition: 1s linear;
+    font-weight: 500;
+}
+
+.pricipal .home .btn{
+    padding: 8px;
+    background: var(--cor-botao-icones);
+    color: var(--cor-bg);
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 16px;
+    margin: 25px;
+    border-radius: 200rem;
+    display: flex;
+    width: 10%;
+    letter-spacing: 1px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    transition: 0.5s
+}
+
+.pricipal .home .btn:hover{
+    color: var(--cor-botao-icones);
+    background-color: var(--cor-bg);
+    border: 1px solid var(--cor-botao-icones);
+    transform: scale(1.07);
+}
+
+
+.pricipal .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .conteudo{
+    position: relative;
+    max-width: 26%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s linear;  
+    padding: 0 30px;
+}
+
+
+section .conteudo .next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .conteudo .next .bx{
+    font-size: 20px;
+    background: var(--cor-botao-icones);
+    color: var(--cor-bg);
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+    padding: 3px;
+    transition: 0.5s; 
+}
+
+section .conteudo .next .bx:hover{
+    transform: scale(1.07);
+}
+
+section .conteudo .cards{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 20%;
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+    scroll-behavior: smooth;
+    transition: 1s linear;
+    cursor: pointer;
+}
+
+section .conteudo .cards::-webkit-scrollbar{
+    display: none;
+}
+
+section .conteudo .cards .card{
+    position: relative;
+    min-width: 155px;
+    min-height: 167px;;
+    border: 1px solid var(--cor-botao-icones);
+    margin-right: 13px;
+    background: var(--cor-botao-icones);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+section .conteudo .cards .card:hover{
+    transform: scale(1.02);
+}
+
+section .conteudo .cards .card img{
+    margin: 8px;
+    background: var(--cor-fundo);
+    border-radius: 5px;
+    width: 89%;
+}
+
+section .conteudo .cards .card:nth-last-child(1){
+    margin-right: 0px;
+}
+
+
+section .conteudo .cards .card h4{
+    color: var(--cor-bg);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 0 10px;
+    padding-top: 15px;
+    margin-top: -8px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+section .conteudo .cards .card h5{
+    color: var(--cor-bg);
+    font-size: 11px;
+    font-family: 500;
+    padding: 0px 10px;
+    margin-top: -8px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+section .conteudo .cards .card p{
+    color: var(--cor-bg);
+    font-size: 9px;
+    font-weight: 500;
+    padding: 0px 10px;
+}
+
+section .conteudo .cards .card span{
+  display: flex;
+  align-items: center;
+}
+
+section .conteudo .cards .card span i{
+    background: none;
+    font-size: 15px;
+    padding: 0;
+    transition: 0.3s;
+}
+
+section .conteudo .cards .card span i:hover{
+    color: var(--cor-botao-nba-2);
+}
+
+
+section .conteudo .botao{
+    margin-top: 5%;
+}
+
+section .conteudo .botao .bx{
+   font-size: 20px;
+   cursor: pointer;
+   transition: .3s linear;
+}
+
+section .conteudo .botao .bx:hover{
+    color: var(--cor-botao-hover);
+}
+
+section .img-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 3%;
+    margin-left: 4%;
+    border-radius: 20px;
+    padding: 1% 5%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-image: url('img/bg-nike.jpg');   
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+section .img-principal .status h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+section .img-principal .status .btn:hover{
+    color: var(--cor-bg);
+    background-color: var(--cor-botao-icones);
+    transform: scale(1.10);
+}
+
+section .img-principal .image img{
+    max-width: 430px;   
+}
+
+section .img-principal:hover .image img {
+    animation: motionProduct 2s infinite;
+}
+
+@keyframes motionProduct {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(20px);
+        
+    }
+}
+
+section .img-principal .meta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .img-principal .star{
+    font-size: 15px;
+    margin: auto;
+    cursor: pointer;   
+    transition: 0.5s;
+    margin-bottom: 40px;
+}
+
+section .img-principal .star:hover{
+    transform: scale(1.10);
+}
+
+section .img-principal .meta .size{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    gap: 8px;
+    flex-direction: column;
+}
+
+section .img-principal .meta .size h6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .img-principal .meta .size .tamanho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+section .img-principal .meta .size input{
+    display: none;
+}   
+
+
+section .img-principal .meta .size label{
+    width: 30px;
+    height: 30px;
+    background-color: var(--cor-botao-icones);
+    color: var(--cor-bg);
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform .3s, box-shadow .3s, color .3s, backgroud-color .3s;
+}
+
+section .img-principal .meta .size label:hover{
+    background-color: var(--cor-botao-hover);
+    transform: scale(1.10);
+}
+
+section .img-principal .meta .size input:checked + label{
+    color: var(--cor-botao-icones);
+    background-color: var(--cor-bg);
+    box-shadow: inset 0 0 0 3px var(--cor-botao-icones);
+}
+
+
+section .img-principal .botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+section .img-principal .botao h2{
+    color: var(--cor-botao-nba-2);
+}
+
+section .img-principal .status .btn{
+    padding: 4px 20px;
+    background: transparent;
+    color: var(--cor-botao-icones);
+    border: 1px solid var(--cor-botao-icones);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 35px;
+    margin: 25px;
+    border-radius: 200rem;
+    display: flex;
+    transition: 0.5s
+}
+/* Fim - Conteudo principal*/
+
+
+/* Começo - Sobre*/
+.sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--cor-fundo);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sobre .ofertas{
+    display: flex;
+}
+
+.sobre .ofertas .cards-ofertas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.sobre .ofertas .cards-ofertas i{
+    font-size: 60px;
+    padding: 15px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.sobre .ofertas .cards-ofertas h4{
+    font-size: 16px;
+    padding: 20px;
+}
+
+.sobre .ofertas .cards-ofertas p{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+}
+/* Fim - Sobre*/
+
+
+
+/* Começo - status do produto*/
+.status{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.produto{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.produto .card-produto-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+    border-radius: 8px;
+    background-image: linear-gradient(135deg, #dddddd, #066ab2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.produto .card-produto-img .img-produto img{
+    width: 250px;
+    padding: 7px;  
+}
+
+
+.produto .titulo{
+    max-width: 20%;
+}
+
+.produto .titulo .titulo-produto{
+    padding-bottom: 15px;
+    color: var(--cor-bg);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.produto .titulo .titulo-produto h3{
+    color: var(--cor-botao-nba-2);
+    font-size: 40px;
+}
+
+.produto .titulo .sub-titulo{
+    font-size: 15px;
+    color: var(--cor-bg);
+    font-weight: 500;
+}
+
+.produto .card-produto-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.produto .card-produto-text{
+   display: flex;
+   justify-content: center;
+}
+
+.produto .card-produto-text .titulo-produto h3{
+    font-size: 25px;
+    max-width: 50%;
+    color: var(--cor-botao-nba);
+    padding-bottom: 13px;
+    margin: auto;
+}
+
+.produto .card-produto-text .sub-titulo{
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.produto .card-produto-text .btn{
+    background-color: var(--cor-fundo);
+    border: 1px solid var(--cor-botao-nba);
+    padding: 10px;
+    width: 28%;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: 600;
+    color: var(--cor-botao-nba);
+    cursor: pointer;
+    transition: 0.5s;
+    margin: auto;
+}
+
+.produto .card-produto-text .btn:hover{
+    background-color: var(--cor-botao-nba);
+    color: var(--cor-fundo);
+}
+
+
+.produto .card-produto-img2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-image: linear-gradient(135deg, #066ab2, #dddddd);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.produto .card-produto-text2{
+    padding-left: 10%;
+    margin-top: 15%;
+    margin-right: 6%;  
+}
+
+
+.produto .card-produto-text2 .titulo-produto h3{
+    font-size: 25px;
+    max-width: 50%;
+    color: var(--cor-botao-nba);
+    max-width: 70%;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+.produto .card-produto-text2 .sub-titulo p{
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px;
+    text-align: center;
+}
+
+.produto .customize{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.produto .customize a{
+    text-decoration: none;
+    background-color: var(--cor-botao-nba);
+    color: var(--cor-bg);
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    margin-right: 8px;
+    transition: 0.5s;
+}
+
+.produto .customize a:hover{
+    background-color: var(--cor-fundo);
+    color: var(--cor-botao-nba);
+    border: 1px solid var(--cor-botao-nba);
+}
+
+.produto .customize i{
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+}
+
+.produto .customize p{
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+.produto .card-produto-text2 .btn{
+    background-color: var(--cor-fundo);
+    border: 1px solid var(--cor-botao-nba);
+    padding: 10px;
+    margin: auto;
+    max-width: 28%;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: 600;
+    color: var(--cor-botao-nba);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.produto .card-produto-text2 .btn:hover{
+    background-color: var(--cor-botao-nba);
+    color: var(--cor-fundo);
+}
+
+.produto .card-produto-img2{
+    padding: 10px;
+    margin-top: 13%;
+}
+
+.produto .card-produto-img2 .img-produto img{
+    width: 300px;
+    transform: rotate(-15deg);
+    
+}
+
+.produto .card-produto-img2 .titulo{
+    max-width: 20%;
+}
+
+.produto .card-produto-img2 .titulo .titulo-produto h4{
+    font-size: 25px;
+    padding-bottom: 10px; 
+}
+
+.produto .card-produto-img2 .titulo .sub-titulo p{
+    font-size: 18px;
+}
+/* Fim - status do produto*/
+
+
+/*Começo - Coleção*/
+.colecao .bg-colecao{
+    background-image: linear-gradient(135deg, #066ab2, #dddddd, #066ab2,#dddddd);
+    margin-top: 7%;
+}
+
+.colecao h1{
+    color: var(--cor-botao-nba);
+}
+
+.colecao h1 span{
+    color: var(--cor-botao-nba-2);
+}
+
+.colecao .nba{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colecao .nba img{
+    width: 120px;
+    margin-bottom: 12px;
+}
+
+.colecao .card-venda{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.colecao .flex-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.colecao .card-venda .card-colecao{
+    border: 1px solid var(--cor-botao-nba);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.colecao .card-venda .card-colecao .produto-name span p{
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.colecao .card-venda .card-colecao:hover{
+    transform: scale(1.03);
+}
+
+.card-colecao .produto-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-colecao .produto-name .cart i{
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.card-colecao .produto-name .cart{
+    display: flex;
+    justify-content: right;
+}
+
+.card-colecao .produto-name .cart .circle{
+    background-color: var(--cor-botao-nba-2);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.card-colecao .produto-name .cart .circle p{
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+.card-colecao .icon-colecao{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+}
+
+.card-colecao .icon-colecao i{
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.card-colecao .icon-colecao .bx-heart:hover{
+    color: var(--cor-botao-nba-2);
+}
+
+.card-colecao .icone{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.card-colecao .icone p{
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.card-colecao .icone .size-n{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-colecao .icone .size-n p{
+    background-color: var(--cor-botao-icones);
+    color: var(--cor-fundo);
+    margin-right: 5px;
+    padding: 4px;
+    border-radius: 50%;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+
+.card-colecao .icone .add-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-colecao .icone .add-cart i{
+    padding: 8px;
+    font-size: 18px;
+}
+
+.card-venda .final{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card-venda .final i{
+    color: goldenrod;
+    font-size: 13px;
+}
+
+.card-venda .final .valor{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-venda .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: var(--cor-botao-nba);
+    transition: 0.3s;
+}
+
+.card-venda .btn:hover{
+    background-color: var(--cor-botao-nba-hover);
+}
+
+.card-venda .btn a{
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--cor-bg);
+    font-weight: 500;
+}
+
+.colecao .menu-colecao{
+    text-align: center;
+    margin: 3% 0;
+}
+
+.colecao .menu-colecao a{
+    text-decoration: none;
+    color: var(--cor-bg);
+    border-radius: 5px;
+    background-color: var(--cor-botao-nba);
+    font-weight: 600;
+    padding: 4px;
+    margin: 1px;
+    transition: 0.3s;
+}
+
+.colecao .menu-colecao a:hover{
+    background-color: var(--cor-botao-nba-hover);
+}
+
+
+.flex-card #menu2,
+.flex-card #menu3,
+.flex-card #menu4,
+.flex-card #menu5{
+    display: none;
+}
+
+.colecao .card-venda .img-card img{
+    width: 200px;
+}
+
+
+/* Começo - Comentarios*/
+.lista-comentario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-comentario .lista-pessoas{
+    display: flex;
+    flex-direction: row;
+    max-width: 98%;
+}
+
+.lista-comentario .lista-pessoas .pessoas{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 7px;
+    border: 1px solid var(--cor-botao-nba);
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.lista-comentario .lista-pessoas .pessoas:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.lista-comentario .lista-pessoas .pessoas .imagem{
+    max-width: 100%;
+    margin: auto;
+}
+
+.lista-comentario .lista-pessoas .pessoas .imagem img{
+    width: 60px;
+    height: 60px;
+}
+
+.lista-comentario .lista-pessoas .pessoas .nome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.lista-comentario .lista-pessoas .pessoas .nome .star{
+    font-size: 15px;
+    color: goldenrod;
+    margin-top: 10px;
+    white-space: nowrap;
+   
+}
+
+.lista-comentario .lista-pessoas .pessoas .comentarios{
+    padding-top: 20px;
+    max-width: 70%;
+    margin-bottom: 40px;
+    margin: auto;
+}
+
+.lista-comentario .lista-pessoas .pessoas .comentarios p{
+    font-size: 16px;
+}
+
+.lista-comentario .lista-pessoas .pessoas .comentarios .icon-comentario{
+    margin-top: 25px;
+}
+
+.lista-comentario .lista-pessoas .pessoas .comentarios .icon-comentario .like{
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.lista-comentario .lista-pessoas .pessoas .comentarios .icon-comentario .like .bx-like{
+    transition: 0.3s;
+}
+
+.lista-comentario .lista-pessoas .pessoas .comentarios .icon-comentario .like .bx-like:hover{
+    color: var(--cor-botao-nba);
+}
+
+.lista-comentario .lista-pessoas .pessoas .comentarios .icon-comentario .like .bx-dislike{
+    transition: 0.3s;
+}
+
+.lista-comentario .lista-pessoas .pessoas .comentarios .icon-comentario .like .bx-dislike:hover{
+    color: var(--cor-botao-nba-2);
+}
+
+.lista-comentario .btn{
+    background-color: var(--cor-botao-nba);
+    padding: 10px;
+    margin-top: 5%;
+    font-size: 15px;
+    color: var(--cor-fundo);
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.lista-comentario .btn:hover{
+    background-color: var(--cor-fundo);
+    color: var(--cor-botao-nba);
+    border: 1px solid var(--cor-botao-nba);
+}
+/* Fim - Comentarios*/
+
+
+/* Começo - footer*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    margin-top: 5%;
+    background-color: var(--cor-botao-icones);
+}
+
+footer .info{
+    display: flex;
+    flex-direction: column;
+}
+footer .info a{
+    text-decoration: none;
+    color: var(--cor-fundo);
+    font-size: 13px;
+}
+
+footer .info .sub-info{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .info .info-titulo{
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 13px;
+}
+
+footer .info #pag{
+    padding-top: 15px;
+}
+
+footer .info .social i{
+    font-size: 25px;
+    margin: 6px;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+footer .info .social i:hover{
+    color: var(--cor-botao-nba);
+}
+
+footer .info .pagamento i{
+    font-size: 25px;
+    margin: 6px;
+    transition: 0.3s;
+}
+
+footer .info .pagamento i:hover{
+    color: var(--cor-botao-nba);
+}
+
+.info-cp{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-botao-icones);
+    color: var(--cor-fundo);
+    border-top: 1px solid var(--cor-fundo);
+    padding: 20px;
+}
+
+.info-cp .termo{
+    white-space: nowrap;
+}
+
+.info-cp a{
+    text-decoration: none;
+    color: var(--cor-fundo);
+    font-size: 13px;
+    padding: 0 25px;
+}
+
+.info-cp p{
+    text-align: center;
+    margin: 0 60px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.info-cp i{
+    font-size: 28px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-botao-icones);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.info-cp i:hover{
+    background-color: var(--cor-botao-nba);
+    color: var(--cor-fundo);
+}
+
+section .titulo-principal{
+    text-align: center;
+    font-size: 33px;
+    transition: 1s linear;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
