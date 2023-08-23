@@ -9,8 +9,7 @@ function toggleElementDisplay(element) {
 
 function clickHbg() {
     toggleElementDisplay(menuHbg);
-    toggleElementDisplay(logo);
-    toggleElementDisplay(cart);
+    toggleElementDisplay(menuNav);
 }
 
 
