@@ -190,15 +190,23 @@
         cursor: pointer;
     }
   
+    header .logo{
+        display: none;
+    }
+    
     header .logo img{
         width: 40px;
     }
 
+    header .menu{
+        display: none;
+    }
+
+    header .carrinho{
+        display: none;
+    }
     .colecao .card-venda .img-card img {
         width: 185px;
-    }
-    header nav{
-        display: none;
     }
 }
 
