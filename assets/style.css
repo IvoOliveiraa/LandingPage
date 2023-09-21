@@ -258,8 +258,8 @@ section .conteudo .cards .card p{
 }
 
 section .conteudo .cards .card span{
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 section .conteudo .cards .card span i{
