@@ -1,7 +1,7 @@
 //menu principal
 function clickHbg(){
     if(header.style.height == "46%"){
-        header.style.height = "8.5%";
+        header.style.height = "7%";
     }else{
         header.style.height = "46%"
     }
