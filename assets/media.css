@@ -204,7 +204,6 @@
         overflow-x: hidden;
         overflow-y: hidden;
         transition: 0.5s all;
-        position: absolute;
     }
 
     header > nav{
@@ -214,9 +213,10 @@
     }
 
     header .menu{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
+        margin: 20px;
     }
 
     header .carrinho{
@@ -705,11 +705,7 @@
         font-size: 30px;
         margin-top: 35px;
     }
-    header nav .menu{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 10px;
-    }
+ 
     header nav .menu a{
         font-size: 14px;
         display: flex;
@@ -732,6 +728,7 @@
     }
 
 }
+
 
 
 
