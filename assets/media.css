@@ -144,7 +144,7 @@
 
 @media screen and (max-width: 948px){
     *{
-        scroll-padding-top: 390px;
+        scroll-padding-top: 375px;
     }
     section .img-principal .image img {
         max-width: 350px;
@@ -193,6 +193,7 @@
   
     header .logo img{
         width: 40px;
+        margin: 0 20px;
     }
 
     .colecao .card-venda .img-card img {
@@ -715,7 +716,6 @@
     header .logo img{
         width: 40px;
         height: 50%;
-        margin: auto;
     }
     header .carrinho{
         margin: auto;
