@@ -144,7 +144,7 @@
 
 @media screen and (max-width: 948px){
     *{
-        scroll-padding-top: 80px;
+        scroll-padding-top: 350px;
     }
     section .img-principal .image img {
         max-width: 350px;
@@ -178,7 +178,7 @@
 
     header .hbg{
         color: var(--cor-bg);
-        font-size: 25px;
+        font-size: 28px;
         display: flex;
         justify-content: center;
         padding: 10px;
@@ -191,26 +191,35 @@
         cursor: pointer;
     }
   
-    header .logo{
-        display: none;
-    }
-    
     header .logo img{
         width: 40px;
     }
 
-    header .menu{
-        display: none;
-    }
-
-    header .carrinho{
-        display: none;
-    }
     .colecao .card-venda .img-card img {
         width: 185px;
     }
-}
 
+    header{
+        height: 6%;
+        overflow-x: hidden;
+        transition: 0.5s all;
+    }
+
+    header > nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .carrinho{
+        margin: auto;
+    }
+}
 
 
 
@@ -271,11 +280,11 @@
         grid-template-columns: 1fr 1fr;
     }
     header .logo img{
-        width: 35px;
+        width: 40px;
         height: 50%;
     }
     header .menu a {
-        font-size: 12px;
+        font-size: 15px;
     }
     header .carrinho i {
         font-size: 15px;
@@ -414,14 +423,6 @@
 
 
 @media screen and (max-width: 665px){
-    *{
-        scroll-padding-top: 150px;
-    }
-    header nav{
-        display: flex;
-        flex-direction: column;
-    }
-
     header .carrinho{
        margin: auto
     }
@@ -683,14 +684,14 @@
 }
 
 
-
+@media screen and (max-width: 473px){
+    section .titulo-principal {
+        font-size: 30px;
+    }
+}
 
 
 @media screen and (max-width: 441px){
-    *{
-        scroll-padding-top: 330px;
-    }
-
     footer .info .info-titulo {
         font-size: 13px;
     }
@@ -702,7 +703,7 @@
         margin-top: 35px;
     }
     header nav .menu{
-        display: none;
+        display: flex;
         flex-direction: column;
         margin-bottom: 10px;
     }

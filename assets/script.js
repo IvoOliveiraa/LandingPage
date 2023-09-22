@@ -1,16 +1,10 @@
 //menu principal
-function toggleElementDisplay(element) {
-    if (element.style.display === 'flex') {
-        element.style.display = 'none';
-    } else {
-        element.style.display = 'flex';
+function clickHbg(){
+    if(header.style.height == "44%"){
+        header.style.height = "6%";
+    }else{
+        header.style.height = "44%"
     }
-}
-
-function clickHbg() {
-    toggleElementDisplay(menuHbg);
-    toggleElementDisplay(logo);
-    toggleElementDisplay(cart);
 }
 
 
