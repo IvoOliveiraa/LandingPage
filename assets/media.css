@@ -204,6 +204,7 @@
         overflow-x: hidden;
         overflow-y: hidden;
         transition: 0.5s all;
+        position: absolute;
     }
 
     header > nav{
@@ -219,7 +220,7 @@
     }
 
     header .carrinho{
-        margin: auto;
+        display: none;
     }
 }
 
